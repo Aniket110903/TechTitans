@@ -12,6 +12,16 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 /* navbar */
 #navbar-1 {
   background-color: black;

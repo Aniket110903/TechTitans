@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './LoginPage.css'
 import { Link } from 'react-router-dom';
+import HeaderComponent from "../components/HeaderComponent";
 // import { useState } from "react";
 function LoginPage() {
     const [name, setName] = useState('')
@@ -33,6 +34,7 @@ function LoginPage() {
 
     return (
         <>
+            <HeaderComponent />
             <div class="containerLogin">
                 <form id="form" class="form">
                     <div className="flex mx-auto w-[50%] mt-12">
