@@ -5,7 +5,7 @@ function IntroComponent() {
         <div className='intro'>
             <div className="intro2">
                 <h1 className="introHeading mx-auto">How can we help you with?</h1>
-                <div className="typewriter text-[#00AFAF] text-2xl text-left ml-[15%]">
+                <div className="typewriter text-[#00AFAF] text-2xl text-left ml-[15%]" style={{ fontSize: "4.5rem" }}>
                     <Typewriter
                         options={{
                             strings: ['Painting', 'Plumbing ', 'Ac Servicing', 'Repairing'],
