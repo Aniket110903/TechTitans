@@ -8,7 +8,7 @@ function FooterComponent() {
   	 			<h4>company</h4>
   	 			<ul>
   	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#service">our services</a></li>
   	 				<li><a href="#">privacy policy</a></li>
   	 				<li><a href="#">affiliate program</a></li>
   	 			</ul>
@@ -24,12 +24,12 @@ function FooterComponent() {
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>online shop</h4>
+  	 			<h4>our services</h4>
   	 			<ul>
-  	 				<li><a href="#">watch</a></li>
-  	 				<li><a href="#">bag</a></li>
-  	 				<li><a href="#">shoes</a></li>
-  	 				<li><a href="#">dress</a></li>
+  	 				<li><a href="#repair">repairs</a></li>
+  	 				<li><a href="#appliances">ac service</a></li>
+  	 				<li><a href="#repair">plumbing</a></li>
+  	 				<li><a href="#repair">eletricians</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">

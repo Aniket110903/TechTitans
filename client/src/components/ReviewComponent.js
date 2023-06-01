@@ -1,3 +1,4 @@
+import "./ReviewComponent.css"
 import { useState } from "react";
 function ReviewComponent() {
     const [email, setEmail] = useState('')
@@ -20,23 +21,25 @@ function ReviewComponent() {
     }
 
     return (
-        <>
-            <div className="addReview">
-                <h1>Add reviews</h1>
-                <form className="reviewBox" onSubmit={addReview}>
-                    <input
+        <>  
+            <div className="addReview px-[10%]">
+                <h1 className="pt-4 px-auto">Add reviews</h1>
+                <form className="reviewBox text-xl w-[40%] mx-auto" onSubmit={addReview}>
+                    <input className="w-full mt-4 rounded-md py-2 pl-2 shadow-md outline-none"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         type="email"
                         placeholder="E-mail"
                     />
+                    <br />
                     <input
+                        className="w-full mt-4 rounded-md py-2 pl-2  shadow-md outline-none"
                         value={review}
                         onChange={(e) => setReview(e.target.value)}
                         type="text"
                         placeholder="Add your valuable review..."
                     />
-                    <input type="submit" value="Submit" />
+                    <input className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300 hover:shadow-lg mt-4 mx-[37%]" type="submit" value="Submit" />
                 </form>
             </div>
         </>

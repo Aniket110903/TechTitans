@@ -22,103 +22,77 @@ function LoginPage() {
         console.log(data)
     }
 
+    function showError(input, message){
+        const form_Control = input.parentElement;
+        form_Control.className = 'formControl error';
+        const small = form_Control.querySelector('small');
+        small.innerText = message;
+    }
+    function showSuccess(input){
+        const form_Control = input.parentElement;
+        form_Control.className = 'formControl sucess';
+    }
+    
+    
+    //CHECK REQUIRED FIELDS
+    function checkRequired(inputArr){
+        inputArr.forEach(function(input){
+            if(input.value.trim() === ''){
+                showError(input, `${getFieldName(input)} is required`);
+            }
+            else{
+                showSuccess(input);
+            }
+        });
+    }
+    //CHECKING FIELD LENGTH
+    function checkLength(input, min, max){
+        if(input.value.length < min){
+            showError(input, `${getFieldName(input)} is less than ${min} characters`);
+        }
+        else if(input.value.length > max){
+            showError(input, `${getFieldName(input)} is greater than ${max} characters`);
+        }
+        else{
+            showSuccess(input);
+        }
+    }
+    // checking email validity
+    function checkEmail(input){
+        const re =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+        if(re.test(input.value)){
+            showSuccess(input);
+        }
+        else{
+            showError(input, `${getFieldName(input)} entered is wrong`);
+        }
+    }
+    function getFieldName(input){
+        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    }
+    
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        checkLength(password, 6, 20);
+        checkEmail(email);
+    });
+
     return (
-        <div>
-            <nav class="main-nav">
-	<ul>
-		<li><a class="signin" href="#0">Sign in</a></li>
-		<li><a class="signup" href="#0">Sign up</a></li>
-	</ul>
-</nav>
-
-<div class="user-modal">
-		<div class="user-modal-container">
-			<ul class="switcher">
-				<li><a href="#0">Sign in</a></li>
-				<li><a href="#0">New account</a></li>
-			</ul>
-
-			<div id="login">
-				<form class="form">
-					<p class="fieldset">
-						<label class="image-replace email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail"/>
-						<span class="error-message">An account with this email address does not exist!</span>
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password"/>
-						<a href="#0" class="hide-password">Show</a>
-						<span class="error-message">Wrong password! Try again.</span>
-					</p>
-
-					<p class="fieldset">
-						<input type="checkbox" id="remember-me" checked/>
-						<label for="remember-me">Remember me</label>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login"/>
-					</p>
-				</form>
-				
-				<p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
-			</div>
-
-			<div id="signup">
-				<form class="form">
-					<p class="fieldset">
-						<label class="image-replace username" for="signup-username">Username</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username"/>
-						<span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace email" for="signup-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail"/>
-						<span class="error-message">Enter a valid email address!</span>
-					</p>
-
-					<p class="fieldset">
-						<label class="image-replace password" for="signup-password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password"/>
-						<a href="#0" class="hide-password">Show</a>
-						<span class="error-message">Your password has to be at least 6 characters long!</span>
-					</p>
-
-					<p class="fieldset">
-						<input type="checkbox" id="accept-terms"/>
-						<label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create account"/>
-					</p>
-				</form>
-
-			</div>
-
-			<div id="reset-password">
-				<p class="form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-				<form class="form">
-					<p class="fieldset">
-						<label class="image-replace email" for="reset-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail"/>
-						<span class="error-message">An account with this email does not exist!</span>
-					</p>
-
-					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Reset password"/>
-					</p>
-				</form>
-
-				<p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
-			</div>
-			<a href="#0" class="close-form">Close</a>
-		</div>
-	</div>
+        <div class="containerLogin">
+            <form id="form" class="form">
+                <h2>Registeration</h2>
+            <div class="formControl">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email"/>
+                <small>error message</small>
+            </div>
+            <div class="formControl">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password"/>
+                <small>error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
     </div>
     );
 }

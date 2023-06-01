@@ -15,7 +15,7 @@ function ServicesComponent() {
                     <h1>Services Provided</h1>
                     </div>
                     <hr class="hr"></hr>
-                    <div className="appliances">
+                    <div className="appliances" id="appliances">
                         <h2>Appliances</h2>
                         <p>Servicing,Repair,Installation & Uninstallation</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
@@ -39,7 +39,7 @@ function ServicesComponent() {
                     </div>
                     <div>
                     <hr class="hr"></hr>
-                    <div class="painting">
+                    <div class="painting" id="painting">
                         <h2>Home Painting</h2>
                         <p>Paint your Home,offices</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
@@ -58,7 +58,7 @@ function ServicesComponent() {
                         </div>
                     </div>
                     <hr class="hr"></hr>
-                    <div class="repair">
+                    <div class="repair" id="repair">
                         <h2>Home Repair</h2>
                         <p>Repair any sort of building Destruction</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">

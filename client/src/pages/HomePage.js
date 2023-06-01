@@ -11,14 +11,11 @@ import IntroComponent from "../components/IntroComponent";
 function HomePage() {
     return (
         <>
-            <HeaderComponent />
             <IntroComponent />
             <ServicesComponent />
             <CarouselComponent />
             <ReviewComponent />
             <MailComponent />
-            {/* <LocationComponent /> */}
-            <FooterComponent />
         </>
     );
 }
