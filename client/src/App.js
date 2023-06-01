@@ -8,6 +8,8 @@ import ServicesPage from "./pages/ServicesPage";
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
 import AboutusComponent from "./components/AboutusComponent";
+import UserLogin from "./pages/Userlogin";
+import WorkerLogin from "./pages/Workerlogin";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/Profile" element={<ProfilePage />} />
         <Route path="/Services" element={<ServicesPage />} />
         <Route path="/AboutUs" element={<AboutusComponent />} />
+        <Route path="/Avneet" element={<UserLogin />} />
+        <Route path="/Raj" element={<WorkerLogin />} />
         <Route path="*" element="Page not exist error 404" />
       </Routes>
       <FooterComponent />

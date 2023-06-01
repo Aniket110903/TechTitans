@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './LoginPage.css'
+import {Link} from 'react-router-dom';
 function LoginPage() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -21,12 +22,26 @@ function LoginPage() {
         const data = await response.json()
         console.log(data)
     }
+    const [buttonState, setS] = useState(0);
+    function make1() {
+        setS(1)
+    }
+    function make0() {
+        setS(0)
+    }
 
     return (
         <>
             <div class="containerLogin">
                 <form id="form" class="form">
-                    <h2>LogIn</h2>
+                <div className="flex mx-auto w-[50%] mt-12">
+                    {buttonState == 0 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-xl" onClick={make0}>Login as User</div>}
+                    {buttonState == 1 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make0}>Login as User</div>}
+                    <div>
+                    {buttonState == 1 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-lg shadow-xl" onClick={make1}>Login as Worker</div>}
+                    {buttonState == 0 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make1}>Login as Worker</div>}
+                    </div>
+                </div>
                     <div class="formControl">
                         <label for="email">Email</label>
                         <input
@@ -45,8 +60,8 @@ function LoginPage() {
                             placeholder="Enter your password"
                         />
                     </div>
-
-                    <button>Submit</button>
+                    {buttonState == 0 && <Link to={"/Avneet"}><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">Register</button></Link>}
+                    {buttonState == 1 && <Link to={"/Raj"}><button className=" bg-[#00afaf] hover:bg-[#00afaf] text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">Register</button></Link>}
                 </form>
 
             </div>

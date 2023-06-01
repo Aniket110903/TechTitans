@@ -19,7 +19,7 @@ function HeaderComponent() {
                         <li><a href="#contact">Contact Us</a></li>
                         <div class="vl"></div>
                         <BiUserCircle  className="text-white mt-[15px] ml-12 text-4xl"/>
-                        <li className="ml-0 pl-0"><a href="/login" className="ml-0 pl-0">Avneet</a></li>
+                        <li className="ml-0 pl-0"><a href="/login" className="ml-0 pl-0">Raj</a></li>
                     </ul>
                 </div>
             </div>
