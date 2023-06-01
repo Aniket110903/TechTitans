@@ -6,7 +6,7 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["http://localhost:3000", "https://swift-fix.netlify.app"]
 }));
 console.log(process.env.password)
 mongoose.connect(`mongodb+srv://mdkaif2938:${process.env.password}@cluster0.pziez2r.mongodb.net/?retryWrites=true&w=majority`, {
