@@ -1,0 +1,25 @@
+.intro {
+    background-image: url(../assets/image.png);
+    height: 100vh;
+}
+
+.intro2 {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+
+.introHeading {
+    font-size: 5rem;
+    padding-top: 6rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    color: #fff;
+    width: 70vw;
+}
+
+.typewriter {
+    font-size: 5rem;
+    padding-top: 5rem;
+    z-index: 20;
+}
