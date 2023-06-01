@@ -63,8 +63,8 @@ function LoginPage() {
                             placeholder="Enter your password"
                         />
                     </div>
-                    {buttonState == 0 && <Link to={"/Avneet"}><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">Register</button></Link>}
-                    {buttonState == 1 && <Link to={"/Raj"}><button className=" bg-[#00afaf] hover:bg-[#00afaf] text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">Register</button></Link>}
+                    {buttonState == 0 && <Link to={"/Avneet"}><button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">LogIn</button></Link>}
+                    {buttonState == 1 && <Link to={"/Raj"}><button className=" bg-[#00afaf] hover:bg-[#00afaf] text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg py-2">LogIn</button></Link>}
                 </form>
 
             </div>

@@ -1,8 +1,10 @@
 import logo from "../assets/swift fix-logos.jpeg";
 import "./AboutUsComponent.css"
+import HeaderComponent from "./HeaderComponent";
 function AboutusComponent() {
     return (
         <>
+            <HeaderComponent />
             <div class="heading">
                 <div class="main-heading">
                     <img src={logo}></img>
