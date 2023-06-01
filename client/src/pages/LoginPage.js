@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './LoginPage.css'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// import { useState } from "react";
 function LoginPage() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -34,14 +35,14 @@ function LoginPage() {
         <>
             <div class="containerLogin">
                 <form id="form" class="form">
-                <div className="flex mx-auto w-[50%] mt-12">
-                    {buttonState == 0 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-xl" onClick={make0}>Login as User</div>}
-                    {buttonState == 1 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make0}>Login as User</div>}
-                    <div>
-                    {buttonState == 1 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-lg shadow-xl" onClick={make1}>Login as Worker</div>}
-                    {buttonState == 0 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make1}>Login as Worker</div>}
+                    <div className="flex mx-auto w-[50%] mt-12">
+                        {buttonState === 0 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-xl" onClick={make0}>Login as User</div>}
+                        {buttonState === 1 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make0}>Login as User</div>}
+                        <div>
+                            {buttonState === 1 && <div className="px-4 py-2 bg-[#00afaf] font-[600] text-white shadow-lg shadow-xl" onClick={make1}>Login as Worker</div>}
+                            {buttonState === 0 && <div className="px-4 py-2 font-[600] bg-white shadow-xl" onClick={make1}>Login as Worker</div>}
+                        </div>
                     </div>
-                </div>
                     <div class="formControl">
                         <label for="email">Email</label>
                         <input
