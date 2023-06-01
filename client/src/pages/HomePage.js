@@ -13,7 +13,7 @@ function HomePage() {
         <>
             <IntroComponent />
             <ServicesComponent />
-            <CarouselComponent />
+            {/* <CarouselComponent /> */}
             <ReviewComponent />
             <MailComponent />
         </>

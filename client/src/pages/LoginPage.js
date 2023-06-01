@@ -22,79 +22,37 @@ function LoginPage() {
         console.log(data)
     }
 
-    function showError(input, message){
-        const form_Control = input.parentElement;
-        form_Control.className = 'formControl error';
-        const small = form_Control.querySelector('small');
-        small.innerText = message;
-    }
-    function showSuccess(input){
-        const form_Control = input.parentElement;
-        form_Control.className = 'formControl sucess';
-    }
-    
-    
-    //CHECK REQUIRED FIELDS
-    function checkRequired(inputArr){
-        inputArr.forEach(function(input){
-            if(input.value.trim() === ''){
-                showError(input, `${getFieldName(input)} is required`);
-            }
-            else{
-                showSuccess(input);
-            }
-        });
-    }
-    //CHECKING FIELD LENGTH
-    function checkLength(input, min, max){
-        if(input.value.length < min){
-            showError(input, `${getFieldName(input)} is less than ${min} characters`);
-        }
-        else if(input.value.length > max){
-            showError(input, `${getFieldName(input)} is greater than ${max} characters`);
-        }
-        else{
-            showSuccess(input);
-        }
-    }
-    // checking email validity
-    function checkEmail(input){
-        const re =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
-        if(re.test(input.value)){
-            showSuccess(input);
-        }
-        else{
-            showError(input, `${getFieldName(input)} entered is wrong`);
-        }
-    }
-    function getFieldName(input){
-        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-    }
-    
-    form.addEventListener('submit', function(e){
-        e.preventDefault();
-        checkLength(password, 6, 20);
-        checkEmail(email);
-    });
-
     return (
-        <div class="containerLogin">
-            <form id="form" class="form">
-                <h2>Registeration</h2>
-            <div class="formControl">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter your email"/>
-                <small>error message</small>
-            </div>
-            <div class="formControl">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password"/>
-                <small>error message</small>
-            </div>
-            <button>Submit</button>
-        </form>
-    </div>
-    );
-}
+        <>
+            <div class="containerLogin">
+                <form id="form" class="form">
+                    <h2>LogIn</h2>
+                    <div class="formControl">
+                        <label for="email">Email</label>
+                        <input
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            type="email"
+                            placeholder="Enter your email"
+                        />
+                    </div>
+                    <div class="formControl">
+                        <label for="password">Enter</label>
+                        <input
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            type="password"
+                            placeholder="Enter your password"
+                        />
+                    </div>
 
+                    <button>Submit</button>
+                </form>
+
+            </div>
+            <label className="newAccount">Don't have an account?<span><a href="/SignUp">Sign up</a></span></label>
+        </>
+    );
+
+}
 export default LoginPage;

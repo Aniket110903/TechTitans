@@ -13,7 +13,7 @@ function HeaderComponent() {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <div class="vl"></div>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="/AboutUs">About Us</a></li>
                         <div class="vl"></div>
                         <li><a href="#contact">Contact Us</a></li>
                         <div class="vl"></div>

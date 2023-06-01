@@ -1,11 +1,13 @@
-:root{
+:root {
     --success-color: #2ecc71;
     --error-color: #e74c3c;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-.containerLogin{
+
+.containerLogin {
     background-color: #f2f2f2;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 500;
@@ -15,11 +17,13 @@
     min-height: 50vh;
     margin: 0;
 }
-h2{
+
+h2 {
     text-align: center;
     margin: 0.5rem 1rem;
 }
-.container{
+
+.container {
     width: 60vw;
     background-color: #fff;
     border-radius: 5px;
@@ -27,16 +31,20 @@ h2{
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
-.form{
+
+.form {
     padding: 1.5rem;
+    width: 50vw;
 }
-.formControl label{
+
+.formControl label {
     color: #777;
     display: block;
     margin-bottom: 7px;
     margin-top: 2.5rem;
 }
-.formControl input{
+
+.formControl input {
     display: block;
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -44,25 +52,31 @@ h2{
     padding: 10px;
     font-size: 14px;
 }
-.formControl input:focus{
+
+.formControl input:focus {
     outline: 0;
     border-color: #777;
 }
-.formControl.sucess input{
+
+.formControl.sucess input {
     border-color: var(--success-color);
 }
-.formControl.error input{
+
+.formControl.error input {
     border-color: var(--error-color);
 }
-.formControl small{
+
+.formControl small {
     position: absolute;
     color: var(--error-color);
     visibility: hidden;
 }
-.formControl.error small{
+
+.formControl.error small {
     visibility: visible;
 }
-.form button{
+
+.form button {
     cursor: pointer;
     background-color: #3498db;
     border: 2px solid #3498db;
@@ -72,4 +86,16 @@ h2{
     width: 100%;
     padding: 10px;
     margin-top: 2.5rem;
+}
+
+.newAccount {
+    color: #777;
+    align-items: center;
+    margin-left: 40%;
+    padding-bottom: 1rem;
+}
+
+.newAccount span {
+    color: #3498db;
+    cursor: pointer;
 }
