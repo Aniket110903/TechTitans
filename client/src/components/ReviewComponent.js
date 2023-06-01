@@ -6,7 +6,7 @@ function ReviewComponent() {
 
     async function addReview(event) {
         event.preventDefault()
-        const response = await fetch('http://localhost:1337/api/review', {
+        const response = await fetch('https://swiftfix-backend.onrender.com/api/review', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ function ReviewComponent() {
     }
 
     return (
-        <>  
+        <>
             <div className="addReview px-[10%]">
                 <h1 className="pt-4 px-auto">Add reviews</h1>
                 <form className="reviewBox text-xl w-[40%] mx-auto" onSubmit={addReview}>
@@ -43,7 +43,7 @@ function ReviewComponent() {
                 </form>
             </div>
         </>
-        
+
     );
 }
 

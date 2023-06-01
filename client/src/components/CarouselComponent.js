@@ -9,7 +9,7 @@ function CarouselComponent() {
   const [reviewsList, setReviewsList] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:1337/api/getreview')
+    fetch('https://swiftfix-backend.onrender.com/api/getreview')
       .then(res => {
         if (res.ok) {
           return res.json();
