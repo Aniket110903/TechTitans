@@ -12,7 +12,7 @@ const card = (data) => {
         <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded ease-in-out duration-300 hover:shadow-lg ml-[34%]">Book</button>
         <div className='flex justify-between w-[90%] mx-auto'>
           <div className='flex'>
-            <h3 className='text-[20px]' style={{ transform: 'translateY(-25px)' }}>{data.rating}</h3>
+            <h3 className='text-[25px]' /*style={{ transform: 'translateY(-25px)' }}*/>{data.rating}</h3>
             <AiOutlineStar className='text-xl ml-[3px] mt-[8px]' />
           </div>
           <p className='text-lg'>{data.reviews} Reviews</p>
