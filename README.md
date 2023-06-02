@@ -64,7 +64,7 @@ Start the server
 ```
 
 ## Website Walkthrough
-![image](./client/swift service ss/1.png)
+![Alt Text](client/swift service ss/1.png)
 
 
 [Video](https://youtu.be/SjOlMeXPTTY)
