@@ -12,26 +12,26 @@ function ServicesComponent() {
         <>
             <div id="services">
                     <div class="service">
-                    <h1 style="font-size:2.5rem font-weight:500"> Services Provided</h1>
+                    <h1 style={{fontsize:'2.5rem' ,fontWeight:500 }}> Services Provided</h1>
                     </div>
                     <hr class="hr"></hr>
                     <div className="appliances" id="appliances">
-                        <h2 style="font-size:2rem font-weight:500">Appliances</h2>
+                        <h2 style={{fontsize:'2rem' ,fontWeight:500 }}>Appliances</h2>
                         <p>Servicing,Repair,Installation & Uninstallation</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box ease-in-out duration-300" id="item-1">
                             <img src={geyser} className=" ease-in-out duration-300" alt=""></img>
-                            <h5 style="font-weight:500">Geyser Repair</h5>
+                            <h5 style={{fontWeight:500}}>Geyser Repair</h5>
                             <p>Start @249</p>
                             </div>
                             <div class="box" id="item-2">
                             <img src={waterpurifer} className=" ease-in-out duration-300" alt=""/>
-                            <h5 style="font-weight:500">Waterpurifer Repair</h5>
+                            <h5 style={{fontWeight:500}}>Waterpurifer Repair</h5>
                             <p>Start @349</p>
                             </div>
                             <div class="box" id="item-3">
                             <img src={airpurifer} className=" ease-in-out duration-300" alt=""/>
-                            <h5 style="font-weight:500">Airpurifer Repair</h5>
+                            <h5 style={{fontWeight:500}}>Airpurifer Repair</h5>
                             <p>Start @449</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@ function ServicesComponent() {
                     <div>
                     <hr class="hr"></hr>
                     <div class="painting" id="painting">
-                        <h2 style="font-size:2rem font-weight:500">Home Painting</h2>
+                        <h2 style={{fontsize:'2rem' ,fontWeight:500 }}>Home Painting</h2>
                         <p>Paint your Home,offices</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box " id="item-1">
@@ -59,7 +59,7 @@ function ServicesComponent() {
                     </div>
                     <hr class="hr"></hr>
                     <div class="repair" id="repair">
-                        <h2 style="font-size:2rem font-weight:500">Home Repair</h2>
+                        <h2 style={{fontsize:'2.5rem' ,fontWeight:500 }}>Home Repair</h2>
                         <p>Repair any sort of building Destruction</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box " id="item-1">

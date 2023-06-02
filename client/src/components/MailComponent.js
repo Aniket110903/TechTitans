@@ -2,7 +2,7 @@ function MailComponent() {
     return (
         <>
         <section id="contact">
-        <h1 class="h-primary center" style="font-size:3rem font-weight:500">Mail Us</h1>
+        <h1 class="h-primary center" style={{fontsize:'2.5rem' ,fontWeight:500 }}>Mail Us</h1>
         <div id="contact-box">
             <form action="backend.php">
                 <div class="form-group">
