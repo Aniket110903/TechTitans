@@ -1,5 +1,6 @@
 import { useState } from "react"
 import HeaderComponent from "../components/HeaderComponent"
+import "./LoginPage.css"
 function SignUpPage() {
 
     const [name, setName] = useState('')
@@ -26,9 +27,9 @@ function SignUpPage() {
     return (
         <div>
             <HeaderComponent />
-            <div className="loginContainer">
+            <div className="containerLogin">
                 <h1>Register</h1>
-                <form className="loginForm" onSubmit={registerUser}>
+                <form className="loginForm form formControl" onSubmit={registerUser}>
                     <input
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -47,7 +48,7 @@ function SignUpPage() {
                         type="password"
                         placeholder="Password"
                     />
-                    <input type="submit" value="register" />
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         </div>
