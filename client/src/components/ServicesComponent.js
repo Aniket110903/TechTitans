@@ -12,11 +12,11 @@ function ServicesComponent() {
         <>
             <div id="services">
                     <div class="service">
-                    <h1 style={{fontsize:'2.5rem' ,fontWeight:500 }}> Services Provided</h1>
+                    <h1 style={{fontSize:'2.5rem' ,fontWeight:500 }}> Services Provided</h1>
                     </div>
                     <hr class="hr"></hr>
                     <div className="appliances" id="appliances">
-                        <h2 style={{fontsize:'2rem' ,fontWeight:500 }}>Appliances</h2>
+                        <h2 style={{fontSize:'2rem' ,fontWeight:500 }}>Appliances</h2>
                         <p>Servicing,Repair,Installation & Uninstallation</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box ease-in-out duration-300" id="item-1">
@@ -40,7 +40,7 @@ function ServicesComponent() {
                     <div>
                     <hr class="hr"></hr>
                     <div class="painting" id="painting">
-                        <h2 style={{fontsize:'2rem' ,fontWeight:500 }}>Home Painting</h2>
+                        <h2 style={{fontSize:'2rem' ,fontWeight:500 }}>Home Painting</h2>
                         <p>Paint your Home,offices</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box " id="item-1">
@@ -59,7 +59,7 @@ function ServicesComponent() {
                     </div>
                     <hr class="hr"></hr>
                     <div class="repair" id="repair">
-                        <h2 style={{fontsize:'2.5rem' ,fontWeight:500 }}>Home Repair</h2>
+                        <h2 style={{fontSize:'2.5rem' ,fontWeight:500 }}>Home Repair</h2>
                         <p>Repair any sort of building Destruction</p>
                         <div className=" grid grid-cols-1 md:grid-cols-3 justify-center my-10px mx-30px">
                             <div class="box " id="item-1">

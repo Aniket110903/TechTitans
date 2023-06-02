@@ -23,7 +23,7 @@ function ReviewComponent() {
     return (
         <>
             <div className="addReview px-[10%]">
-                <h1 className="pt-4 px-auto" style={{fontsize:'2.5rem' ,fontWeight:500 }}>Add reviews</h1>
+                <h1 className="pt-4 px-auto" style={{fontSize:'2.5rem' ,fontWeight:500 }}>Add reviews</h1>
                 <form className="reviewBox text-xl w-[40%] mx-auto" onSubmit={addReview}>
                     <input className="w-full mt-4 rounded-md py-2 pl-2 shadow-md outline-none"
                         value={email}

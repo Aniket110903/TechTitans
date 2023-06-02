@@ -50,8 +50,8 @@ function CarouselComponent() {
             <Carousel.Caption>
 
               <div key={review._id}>
-                <h1 className='' style={{fontsize:'2.5rem' ,fontWeight:500 }}>{review.review}</h1>
-                <h2 className='' style={{fontsize:'2rem' ,fontWeight:500 }}>{review.email}</h2>
+                <h1 className='' style={{fontSize:'2.5rem' ,fontWeight:500 }}>{review.review}</h1>
+                <h2 className='' style={{fontSize:'2rem' ,fontWeight:500 }}>{review.email}</h2>
               </div>
 
             </Carousel.Caption>
