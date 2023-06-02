@@ -64,7 +64,7 @@ Start the server
 ```
 
 ## Website Walkthrough
-![Alt Text](client/swift service ss/1.png)
+![Alt Text](client/swiftservice/1.png)
 
 
 [Video](https://youtu.be/SjOlMeXPTTY)
@@ -75,4 +75,4 @@ Start the server
 
 [Aniket Goyal](https://www.linkedin.com/in/aniketgoyal110903/)  - Full Stack Developer\
 [Avneet Singh](https://www.linkedin.com/in/avneet-singh-7758a1227/)  - Full Stack Developer\
-[Mohd Kaif](https://www.linkedin.com/in/mohd-kaif-7ba250228/)  -  Full Stack Developer\
+[Mohd Kaif](https://www.linkedin.com/in/mohd-kaif-7ba250228/)  -  Full Stack Developer
