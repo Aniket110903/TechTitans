@@ -4,7 +4,7 @@
 
 ![image](https://swift-fix.netlify.app/static/media/swift%20fix-logos.933d29a2e4e5f1ac025b.jpeg)
 
-At Swift Fix, we believe in making home repairs effortless and efficient. Our platform connects users like you with trusted home repair shop owners, ensuring that your repair needs are met with convenience and reliability.
+At Swift Fix, we believe in making home repairs effortless and efficient. Our platform connects users like you with trusted home repair shop owners, ensuring that your repair needs are met with convenience and reliability.  
 
 Home repairs can often be a cumbersome and time-consuming task for homeowners. Finding reliable and skilled local shop owners who can efficiently carry out the required repairs can be a significant challenge.
 
