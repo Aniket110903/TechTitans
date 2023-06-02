@@ -65,6 +65,14 @@ Start the server
 
 ## Website Walkthrough
 ![Alt Text](client/swiftservice/1.png)
+![Alt Text](client/swiftservice/2.png)
+![Alt Text](client/swiftservice/3.png)
+![Alt Text](client/swiftservice/4.png)
+![Alt Text](client/swiftservice/5.png)
+![Alt Text](client/swiftservice/6.png)
+![Alt Text](client/swiftservice/7.png)
+![Alt Text](client/swiftservice/8.png)
+![Alt Text](client/swiftservice/9.png)
 
 
 [Video](https://youtu.be/SjOlMeXPTTY)
