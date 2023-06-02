@@ -4,7 +4,10 @@ import HeaderComponent from "./HeaderComponent";
 function AboutusComponent() {
     return (
         <>
+<<<<<<< Updated upstream
             <HeaderComponent />
+=======
+>>>>>>> Stashed changes
             <div class="heading">
                 <div class="main-heading">
                     <img src={logo}></img>
