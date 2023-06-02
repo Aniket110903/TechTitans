@@ -24,13 +24,13 @@ function LoginPage() {
         const data = await response.json()
         console.log(data)
     }
-    const [buttonState, setS] = useState(0);
-    function make1() {
-        setS(1)
-    }
-    function make0() {
-        setS(0)
-    }
+    // const [buttonState, setS] = useState(0);
+    // function make1() {
+    //     setS(1)
+    // }
+    // function make0() {
+    //     setS(0)
+    // }
     const [buttonState, setS] = useState(0);
     function make1() {
         setS(1)
